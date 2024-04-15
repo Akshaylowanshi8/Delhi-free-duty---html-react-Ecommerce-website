@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin deshboard</title>
+</head>
+<style>
+    aside{
+        float: left;
+        background-color: #7a0a4c;
+        height: 100vh;
+        width:24vw;
+  text-align: center;}
+
+
+  body{
+    overflow: hidden;
+
+  }
+    
+    #img {
+        height: 80px;
+    }
+aside ul {
+    list-style: none;
+}
+aside ul li {
+    padding: 26px;
+    font-size: 24px;
+    font-weight: 800;
+    color:white;
+
+}
+
+nav{
+    text-align: center;
+    /* justify-items: center; */
+    height: 100px;
+background-color: #7a0a4c;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+
+
+}
+#h{
+font-size: 40px;
+/* padding-top: 20px; */
+}
+
+#data{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+#data div{
+    font-size: 26px;
+    color: #7a0a4c;
+    font-weight: 600;
+}
+#data div h1::after{
+    content: "++";
+    color: green;
+
+}
+
+</style>
+<body  onload="allrec()">
+    <aside onload="alldes()">
+        <ul>
+            <li><a id="a" href="#"><img id="img" src="https://delhidutyfree.co.in/media/logo/default/DDFS_Logo.png"alt="img coming soon....."></a></li>
+            <li><a >deshboard</a></li>
+            <li><a onclick="rec()">records</a></li>
+            <li><a href="">insert</a></li>
+            <li><a href="">anslytics</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">setting</a></li>
+        </ul>
+    </aside>
+<nav>
+    <h1  id="h">admin dasboard</h1>
+</nav>
+ <div id="data">
+    <div> All  products <h1 id="allrec" ></h1></div>
+  <div> Beauty products  <h1 id="makup"></h1></div>
+  <div>perfume products   <h1 id="tecrec"></h1></div>
+   <div> drink products <h1 id="brink"></h1></div>
+   <div>No of user <h1 id="user"></h1></div>
+ </div>
+
+
+
+
+<script src="dasbo.js"></script>
+</body>
+</html>
